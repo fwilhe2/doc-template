@@ -8,6 +8,10 @@ jobs:
         uses: actions/checkout@v1
       - name: Install Dependencies
         run: |
-          sudo apt-get -y update && sudo apt-get -yqq install build-essential texlive-full texlive-latex-extra pandoc gladtex
+          sudo apt-get -y update && sudo apt-get -yqq install texlive-full texlive-latex-extra latexmk pandoc gladtex
       - name: Compile LaTeX document
-        run: pdflatex --help
+        run: latexmk -pdf doc
+      - uses: actions/upload-artifact@master
+        with:
+          name: doc
+          path: doc.pdf
