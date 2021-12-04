@@ -1,0 +1,13 @@
+name: Build LaTeX document
+on: [push, workflow_dispatch]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Install Dependencies
+        run: |
+          sudo apt-get -y update && sudo apt-get -yqq install build-essential texlive-full texlive-latex-extra pandoc gladtex
+      - name: Compile LaTeX document
+        run: pdflatex --help
