@@ -7,9 +7,6 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v1
-      - name: Install Dependencies
-        run: |
-          sudo apt-get -y update && sudo apt-get -yqq install texlive-full texlive-latex-extra latexmk pandoc gladtex
       - name: Compile LaTeX document
         run: latexmk -pdf doc
       - uses: actions/upload-artifact@master
