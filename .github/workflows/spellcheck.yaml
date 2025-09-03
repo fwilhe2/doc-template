@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - run: npm install -D @cspell/dict-de-de
       - uses: streetsidesoftware/cspell-action@v7
         with:
           files: 'doc/**/*.md'
@@ -14,6 +15,6 @@ jobs:
           inline: warning
           suggestions: false
           strict: false
-          config: '.cspell.config.yaml'
+          config: '.cspell.config2.yaml'
           verbose: false
           report: all
