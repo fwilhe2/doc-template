@@ -3,3 +3,6 @@ dictionaries:
 - de-de
 - en_US
 ignoreWords: []
+import:
+  - '@cspell/dict-de-de/cspell-ext.json'
+language: de, de_DE, en

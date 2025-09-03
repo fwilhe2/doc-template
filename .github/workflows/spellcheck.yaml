@@ -15,7 +15,7 @@ jobs:
           inline: warning
           suggestions: false
           strict: false
-          config: '.cspell.config2.yaml'
+          config: '.cspell.config.yaml'
           verbose: true
           report: all
           incremental_files_only: false
