@@ -1,0 +1,19 @@
+name: 'Check spelling'
+on:
+  push:
+
+jobs:
+  spellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: streetsidesoftware/cspell-action@v7
+        with:
+          files: 'doc/**/*.md'
+          root: '.'
+          inline: warning
+          suggestions: false
+          strict: false
+          config: '.cspell.config.yaml'
+          verbose: false
+          report: all
