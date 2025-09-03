@@ -18,3 +18,4 @@ jobs:
           config: '.cspell.config2.yaml'
           verbose: true
           report: all
+          incremental_files_only: false
