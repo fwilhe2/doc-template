@@ -16,5 +16,5 @@ jobs:
           suggestions: false
           strict: false
           config: '.cspell.config2.yaml'
-          verbose: false
+          verbose: true
           report: all
