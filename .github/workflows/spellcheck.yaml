@@ -11,8 +11,8 @@ jobs:
       - uses: streetsidesoftware/cspell-action@v8
         with:
           files: |
-            'README.md'
-            'doc/**/*.md'
+            README.md
+            doc/**/*.md
           root: '.'
           inline: warning
           suggestions: false
