@@ -1,15 +1,19 @@
 Sample document to check if spell checking works in both languages
 
-English:
-The little town was quiet in the morning light. Birds sang from the rooftops, and the smell of fresh bread drifted through the streets. Children hurried to school, waving to neighbors as they passed.
+### English (Correct)
 
-Deutsch:
-Das kleine Dorf war still im Morgenlicht. Vögel sangen von den Dächern, und der Duft von frischem Brot zog durch die Gassen. Kinder eilten zur Schule und winkten den Nachbarn zu.
+The efficiency of modern software depends heavily on the accuracy of its underlying algorithms. Developers must ensure that every line of code is optimized for performance while maintaining a high level of readability for future maintenance. Regular updates are essential to address security vulnerabilities and improve user experience across various platforms.
 
-English (with errors):
-The littel town was quiet in the moring ligt. Birds sang from the rooftops, and the smeel of frehsh bread drifted thru the streets. Childrens hurryed to schol, waveing to neigbors as they past.
+### English (With Errors)
 
-Deutsch (mit Fehlern):
-Das kleine Drof war still im Morenlicht. Vögel sangen von den Dächern, und der Duft von frischem Brod zog durch die Gassen. Kinder eilten zur Schule und winkten den Nachbahrn zu.
+The effeciency of moderen softwear depends hevily on the accurasy of its underlyng algorythms. Develpers must insure that evry line of code is optimized for performanse while maintaining a high levle of readibility for futur maintenence. Reguler up-dates are esential to adress securty vulnerabilties and improove user experiance accross varius platfoms.
+
+### Deutsch (Korrekt)
+
+Die Digitalisierung verändert unsere Gesellschaft in einem rasanten Tempo. Besonders im Bereich der künstlichen Intelligenz gibt es täglich neue Entwicklungen, die unseren Alltag erleichtern können. Es ist jedoch wichtig, dass wir dabei den Datenschutz und die ethischen Grundsätze nicht aus den Augen verlieren.
+
+### Deutsch (Mit Fehlern)
+
+Die digitalisierung ferändert unsere geselschaft in einem rasandem tempo. Bessonders im bereich der künstlichen inteligens gibt es täglich neue entwicklungen, die unseren altag erleichtrn könen. Es ist jeddoch wichtig, das wir dabeiden datenschutz und die etischen grundsetze nicht aus den augen ferlieren.
 
 log entry 2026-03-14 17:46:25: Happy Pi Day
