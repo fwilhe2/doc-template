@@ -8,3 +8,5 @@ This repo contains a template for writing documents
     - Config for bilingual spell check German/English (`.cspell.config.yaml`)
     - Recommended VS Code Extensions (`.vscode/extensions.json`)
     - CI config for spellcheck (`.github/workflows/spellcheck.yaml`)
+- Pre-defined [snippets](https://code.visualstudio.com/docs/editing/userdefinedsnippets) for inserting the current date/datetime
+    - Press `Ctrl` + `space` and type `date`

@@ -1,0 +1,16 @@
+{
+	"datetime": {
+		"prefix": "datetime",
+		"description": "insert current datetime",
+		"body": [
+			"$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+		]
+	},
+	"date": {
+		"prefix": "date",
+		"description": "insert current date",
+		"body": [
+			"$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+		]
+	}
+}
