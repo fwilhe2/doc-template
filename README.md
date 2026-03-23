@@ -1,40 +1,50 @@
-# Document template
+# Document Template
 
-This repo contains a template for writing documents
+This repository provides a standardized environment for writing documents in Markdown. It includes automated spelling and linting checks, a containerized build process, and VS Code integrations to ensure consistency across different contributors.
 
-## Features
+## Tooling and Workflow
 
-- Spellcheck using [CSpell](https://cspell.org/)
-  - Config for bilingual spell check German/English (`.cspell.config.yaml`)
-  - Recommended VS Code Extensions (`.vscode/extensions.json`)
-  - CI config for spellcheck (`.github/workflows/spellcheck.yaml`)
-- [Markdownlint VS Code Extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) with copy on save setting enabled
-- Containerized build, locally and in CI (see `Makefile` and `.github/workflows/build.yaml`)
-- Pre-defined [snippets](https://code.visualstudio.com/docs/editing/userdefinedsnippets) for
-  - Inserting the current date/datetime: Press `Ctrl` + `space` and type `date`
-  - Inserting [GitHub Alerts](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts): Press `Ctrl` + `space` and type note, tip, important, warning or caution
+The setup relies on several tools to maintain document quality:
 
-## Sample document
+* **Bilingual Spellcheck:** Configured via [CSpell](https://cspell.org/) with support for English and German. The settings are defined in `.cspell.config.yaml`.
+* **Markdown Linting:** Integrated with the [Markdownlint extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) for VS Code. It is configured to auto-fix formatting issues on save.
+* **Containerized Builds:** A `Makefile` is provided to run builds and checks inside a container, ensuring the same environment is used locally and in GitHub Actions.
+* **Automated Checks:** Every push triggers a GitHub Action workflow that runs the spellchecker and attempts a document build.
 
-Purpose: check if spell checking works in both languages
+## Writing Shortcuts (VS Code Snippets)
 
-### English (Correct)
+To speed up common tasks, use `Ctrl` + `Space` in VS Code to trigger these snippets:
 
-The efficiency of modern software depends heavily on the accuracy of its underlying algorithms. Developers must ensure that every line of code is optimized for performance while maintaining a high level of readability for future maintenance. Regular updates are essential to address security vulnerabilities and improve user experience across various platforms.
+| Prefix | Description |
+| :--- | :--- |
+| `date` | Inserts the current ISO date (e.g., 2026-03-23) |
+| `datetime` | Inserts the current ISO datetime (e.g., 2026-03-23 21:34) |
+| `note` | Inserts a GitHub Note alert block |
+| `tip` | Inserts a GitHub Tip alert block |
+| `important` | Inserts a GitHub Important alert block |
+| `warning` | Inserts a GitHub Warning alert block |
+| `caution` | Inserts a GitHub Caution alert block |
 
-### English (With Errors)
+## Configuration and Setup
 
-The effeciency of moderen softwear depends hevily on the accurasy of its underlyng algorythms. Develpers must insure that evry line of code is optimized for performanse while maintaining a high levle of readibility for futur maintenence. Reguler up-dates are esential to adress securty vulnerabilties and improove user experiance accross varius platfoms.
+1. **Extensions:** When opening this project in VS Code, install the recommended extensions listed in `.vscode/extensions.json`.
+1. **Custom Dictionary:** If you encounter valid words flagged as errors, add them to the `words` list in `.cspell.config.yaml`.
 
-### Deutsch (Korrekt)
+## Setup Verification
 
-Die Digitalisierung verändert unsere Gesellschaft in einem rasanten Tempo. Besonders im Bereich der künstlichen Intelligenz gibt es täglich neue Entwicklungen, die unseren Alltag erleichtern können. Es ist jedoch wichtig, dass wir dabei den Datenschutz und die ethischen Grundsätze nicht aus den Augen verlieren.
+The following sections are used to test the CSpell configuration. If your environment is set up correctly, the "With Errors" sections should show linting highlights.
 
-### Deutsch (Mit Fehlern)
+### English Test
 
-Die digitalisierung ferändert unsere geselschaft in einem rasandem tempo. Bessonders im bereich der künstlichen inteligens gibt es täglich neue entwicklungen, die unseren altag erleichtrn könen. Es ist jeddoch wichtig, das wir dabeiden datenschutz und die etischen grundsetze nicht aus den augen ferlieren.
+* **Correct:** The efficiency of modern software depends heavily on the accuracy of its underlying algorithms.
+* **With Errors:** The *effeciency* of *moderen* *softwear* depends *hevily* on the *accurasy* of its *underlyng* *algorythms*.
 
-log entry 2026-03-14 17:46:25: Happy Pi Day
+### German Test
+
+* **Korrekt:** Die Digitalisierung verändert unsere Gesellschaft in einem rasanten Tempo.
+* **Mit Fehlern:** Die *digitalisierung* *ferändert* unsere *geselschaft* in einem *rasandem* *tempo*.
+
+Log Entry 2026-03-14 17:46:25: Happy Pi Day
 
 > [!TIP]
-> Not all [markdown features](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) are universal
+> Not all Markdown features are universal. This template targets GitHub-flavored Markdown.
