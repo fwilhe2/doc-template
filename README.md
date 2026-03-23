@@ -5,15 +5,16 @@ This repo contains a template for writing documents
 ## Features
 
 - Spellcheck using [CSpell](https://cspell.org/)
-    - Config for bilingual spell check German/English (`.cspell.config.yaml`)
-    - Recommended VS Code Extensions (`.vscode/extensions.json`)
-    - CI config for spellcheck (`.github/workflows/spellcheck.yaml`)
+  - Config for bilingual spell check German/English (`.cspell.config.yaml`)
+  - Recommended VS Code Extensions (`.vscode/extensions.json`)
+  - CI config for spellcheck (`.github/workflows/spellcheck.yaml`)
+- [Markdownlint VS Code Extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) with copy on save setting enabled
 - Containerized build, locally and in CI (see `Makefile` and `.github/workflows/build.yaml`)
 - Pre-defined [snippets](https://code.visualstudio.com/docs/editing/userdefinedsnippets) for inserting the current date/datetime
-    - Press `Ctrl` + `space` and type `date`
-
+  - Press `Ctrl` + `space` and type `date`
 
 ## Sample document
+
 Purpose: check if spell checking works in both languages
 
 ### English (Correct)
