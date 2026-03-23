@@ -12,5 +12,30 @@
 		"body": [
 			"$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
 		]
+	},
+	"note": {
+		"prefix": "note",
+		"description": "insert github flavourd markdown note",
+		"body": "> [!NOTE]\n> "
+	},
+	"tip": {
+		"prefix": "tip",
+		"description": "insert github flavourd markdown tip",
+		"body": "> [!TIP]\n> "
+	},
+	"important": {
+		"prefix": "important",
+		"description": "insert github flavourd markdown important",
+		"body": "> [!IMPORTANT]\n> "
+	},
+	"warning": {
+		"prefix": "warning",
+		"description": "insert github flavourd markdown warning",
+		"body": "> [!WARNING]\n> "
+	},
+	"caution": {
+		"prefix": "caution",
+		"description": "insert github flavourd markdown caution",
+		"body": "> [!CAUTION]\n> "
 	}
 }

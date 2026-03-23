@@ -10,8 +10,9 @@ This repo contains a template for writing documents
   - CI config for spellcheck (`.github/workflows/spellcheck.yaml`)
 - [Markdownlint VS Code Extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) with copy on save setting enabled
 - Containerized build, locally and in CI (see `Makefile` and `.github/workflows/build.yaml`)
-- Pre-defined [snippets](https://code.visualstudio.com/docs/editing/userdefinedsnippets) for inserting the current date/datetime
-  - Press `Ctrl` + `space` and type `date`
+- Pre-defined [snippets](https://code.visualstudio.com/docs/editing/userdefinedsnippets) for
+  - Inserting the current date/datetime: Press `Ctrl` + `space` and type `date`
+  - Inserting [GitHub Alerts](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts): Press `Ctrl` + `space` and type note, tip, important, warning or caution
 
 ## Sample document
 
@@ -34,3 +35,6 @@ Die Digitalisierung verändert unsere Gesellschaft in einem rasanten Tempo. Beso
 Die digitalisierung ferändert unsere geselschaft in einem rasandem tempo. Bessonders im bereich der künstlichen inteligens gibt es täglich neue entwicklungen, die unseren altag erleichtrn könen. Es ist jeddoch wichtig, das wir dabeiden datenschutz und die etischen grundsetze nicht aus den augen ferlieren.
 
 log entry 2026-03-14 17:46:25: Happy Pi Day
+
+> [!TIP]
+> Not all [markdown features](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) are universal
